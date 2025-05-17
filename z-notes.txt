@@ -1,0 +1,45 @@
+___ barevné vyhodnocení z celkového hodnocení
+___ udělat to random ty slidery
+___ final text
+___ chatgpt
+___ nejdříve to udělat na ruční slajdy které jsou dopředu nastavé a pak zkusit měnit obsah s jednou šablonou
+
+/* 
+
+1. vytvoč button a 
+2. když klinu na button změním display none na display block třeba
+3. pokaždém klinutí na další otázku se jen změní text a obrázek
+4. poslední button vytvoří obsah který se postpuně měnil
+
+*/
+
+switching display none a display block mezi třemi slidery
+
+
+když kliknu zkontroluj jesli checknutý radio má hodnotu corrcet, jesli má tak vypiš correct a jesli ne tak vypiš wrong
+
+------------------------------------------------------------------
+POČÍTADLO CORRECT - FINAL BUTTON
+
+JS:
+function myfnx(){
+    let x = document.querySelectorAll("input[name=vyber]")
+
+    x.forEach(function(inputs){
+        if(inputs.checked == true && inputs.value == "correct"){
+            console.log("rebels")
+        }
+    })
+}
+__________________________________
+
+HTML:
+<div class="radios">
+    <label><input type="radio" name="vyber" value="correct"> Možnost 1</label><br>
+    <label><input type="radio" name="vyber" value="wrong"> Možnost 2</label><br>
+    <label><input type="radio" name="vyber" value="wrong"> Možnost 3</label><br>
+</div>
+
+<button id="btn1" onclick="myfnx()">zkonrolovat</button>
+------------------------------------------------------------------
+    
