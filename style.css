@@ -5,4 +5,14 @@
   font-family: 'Roboto Flex', sans-serif;
 }
 
-body {background-color: coral;}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: aquamarine;
+  color: rgb(50, 98, 82);
+  font-size: 20px;
+  height: 100vh;
+}
