@@ -1,3 +1,4 @@
+/* Reset stylů pro lepší konzistenci */
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +6,21 @@
   font-family: 'Roboto Flex', sans-serif;
 }
 
+/* Celá stránka */
 body {
   display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: column;        /* Zajistí vertikální skládání */
+  justify-content: center;       /* Zarovná vertikálně do středu */
+  align-items: center;           /* Zarovná horizontálně do středu */
+  height: 100vh;                 /* Výška celé obrazovky */
   background-color: aquamarine;
   color: rgb(50, 98, 82);
-  font-size: 7rem;
-  font-size: bold;
+  font-size: 20px;
+  text-align: center;
 }
 
+/* Všechny <p> */
 p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0.5rem 0;
+  margin: 1rem 0;                /* Vertikální mezery mezi odstavci */
 }
+
