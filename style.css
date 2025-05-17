@@ -18,9 +18,3 @@ body {
   font-size: 20px;
   text-align: center;
 }
-
-/* Všechny <p> */
-p {
-  margin: 1rem 0;                /* Vertikální mezery mezi odstavci */
-}
-
