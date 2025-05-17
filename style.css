@@ -6,11 +6,21 @@
 }
 
 body {
- position: relative;
-  text-align: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
   background-color: aquamarine;
   color: rgb(50, 98, 82);
   font-size: 7rem;
   font-size: bold;
-  height: 100vh;
+}
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
