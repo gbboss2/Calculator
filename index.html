@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mylib/fonts.css">
+<meta charset="UTF-8">
+<title>Kalkulačka</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<p>patience is key</p>
-<p>patience is key</p>
-<p>patience is key</p>
+<div id="main-container">
+    <div id="widthx">
+        <div id="input-display">
+            <input type="text" >
+        </div>
+        <div id="typing-board">
+            <button onclick="calcFunc(`7`)">7</button>
+            <button onclick="calcFunc(`8`)">8</button>
+            <button onclick="calcFunc(`9`)">9</button>
+            <button class="dark-theme" onclick="calcFuncSymbol(`/`)">&divide;</button>
+            <button onclick="calcFunc(`4`)">4</button>
+            <button onclick="calcFunc(`5`)">5</button>
+            <button onclick="calcFunc(`6`)">6</button>
+            <button class="dark-theme" onclick="calcFuncSymbol(`*`)">&times;</button>
+            <button onclick="calcFunc(`1`)">1</button>
+            <button onclick="calcFunc(`2`)">2</button>
+            <button onclick="calcFunc(`3`)">3</button>
+            <button class="dark-theme" onclick="calcFuncSymbol(`-`)">-</button>
+            <button onclick="calcFunc(`0`)">0</button>
+            <button onclick="calcFuncDot(`.`)">.</button>
+            <button class="calcFuncDot" onclick="calsFuncEqual()">=</button>
+            <button class="dark-calcFunc" onclick="calcFuncSymbol(`+`)">+</button>
+        </div>
+    </div>
+</div>
 
 
-    <script src="javascript.js"></script>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>

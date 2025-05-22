@@ -1,4 +1,3 @@
-/* Reset stylů pro lepší konzistenci */
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +5,66 @@
   font-family: 'Roboto Flex', sans-serif;
 }
 
-/* Celá stránka */
 body {
+  background-color: #F8EBC9;
+}
+
+#main-container {
   display: flex;
-  flex-direction: column;        /* Zajistí vertikální skládání */
-  justify-content: center;       /* Zarovná vertikálně do středu */
-  align-items: center;           /* Zarovná horizontálně do středu */
-  height: 100vh;                 /* Výška celé obrazovky */
-  background-color: aquamarine;
-  color: rgb(50, 98, 82);
-  font-size: 3rem;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #EAA900;
+}
+
+#widthx {
+  display: grid;
+  width: 400px;
+  gap: 14px;
+}
+
+#input-display input {
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0px 4px 7px #0000001c;
+  cursor: pointer;
+  display: flex;
+  text-align: end;
+  padding-right: 13px;
+  font-size: 21px;
+  color: #424242;
+}
+
+#typing-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 14px;
+  color: #EAA900;
+}
+
+button {
+  position: relative;
+  border: none;
+  border-radius: 7px;
+  color: #EAA900;
+  font-size: 22px;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 7px #0000001c;
+  cursor: pointer;
+}
+
+button:hover {
+    top: 1px;
+}
+
+.dark-theme {
+  background: #424242;
+}
+
+.equal {
+  background-color: #EAA900;
+  color: white;
 }
